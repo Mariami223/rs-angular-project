@@ -1,0 +1,107 @@
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  width: 850px;
+  margin: auto;
+}
+.parent_container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  width: 197px;
+  height: 232px;
+  justify-content: end;
+  background-color: #b8b8e273;
+  color: #8a6c6b;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.08);
+}
+.card a {
+  color: #8a6c6b;
+  text-decoration: none;
+  font-weight: bold;
+}
+.acrobat_icon {
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card2 {
+  width: 25%;
+  height: 21%;
+  position: absolute;
+  background-color: #ffffff;
+  top: 0;
+  right: 0;
+  border-bottom-left-radius: 10px;
+  border-style: none;
+}
+.folded-corner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 49px solid transparent;
+  border-left: 49px solid #f5eeee70;
+  border-bottom-left-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-content {
+  padding-inline: 6px;
+}
+
+.card-content h3 {
+  width: 90%;
+  padding-bottom: 10px;
+  font-size: 16px;
+  font-weight: 100 bold;
+  line-height: 1.4;
+  cursor: pointer;
+}
+.card-content h3:hover {
+  color: rgb(203, 106, 106);
+}
+.card-content a {
+  width: 90%;
+  margin-bottom: 18px;
+  font-size: 18px;
+  font-weight: 100 bold;
+  line-height: 1.4;
+}
+.card-content p {
+  padding: 10px 0 10px 0;
+}
+
+.card-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  border-top: 1px solid #bebab9;
+}

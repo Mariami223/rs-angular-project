@@ -1,0 +1,29 @@
+<p-toast position="top-center"></p-toast>
+<app-search (searchTextChanged)="onSearchTextEntered($event)"></app-search>
+
+<div class="parent_container">
+  <div class="container" *ngFor="let item of data">
+    <div
+      class="card"
+      (click)="cardClick(item)"
+      *ngIf="searchText === '' || item.title.toLowerCase().includes(searchText)"
+    >
+      <div>
+        <div class="acrobat_icon">
+          <img src="../../../assets/acrobat.png" width="30px" />
+        </div>
+        <div class="card2"></div>
+        <div class="folded-corner"></div>
+        <div class="card-content">
+          <!-- <a href="/details">{{ item.title }}</a>-->
+          <h3 href="" (click)="onTitleClick($event, item)">{{ item.title }}</h3>
+          <div class="card-link" *ngIf="item.active">
+            <img src="{{ item.linkLogo }}" width="30px" />
+            <p>{{ item.linkTitle }}</p>
+          </div>
+          <p>{{ item.date }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

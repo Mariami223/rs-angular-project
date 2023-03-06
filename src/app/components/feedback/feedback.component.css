@@ -1,0 +1,20 @@
+.sticky {
+  position: sticky;
+  top: 50%;
+  right: 0;
+  width: 50px;
+  height: 200px;
+  background-color: #2d7ed0;
+  transform: rotate(0deg);
+  transform-origin: left;
+  padding: 10px;
+  color: #fff;
+  border-end-start-radius: 10px;
+  border-top-left-radius: 10px;
+  /* z-index: -10; */
+  cursor: pointer;
+}
+.sticky p {
+  transform: rotate(90deg);
+  margin-top: 50px;
+}

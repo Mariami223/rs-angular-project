@@ -1,0 +1,22 @@
+<p-toast position="top-right"></p-toast>
+<div class="card-container">
+  <div class="rate-star-container">
+    <img src="../../../assets/star.png" />
+  </div>
+  <div class="card-content">
+    <h1>როგორ მოგწონთ ჩვენი აპლიკაცია?</h1>
+
+    <p>თქვენი უკუკავშირი ჩვენთვის მნიშვნელოვანია</p>
+
+    <div class="number-container">
+      <button (click)="selectNumber(1)">1</button>
+      <button (click)="selectNumber(2)">2</button>
+      <button (click)="selectNumber(3)">3</button>
+      <button (click)="selectNumber(4)">4</button>
+      <button (click)="selectNumber(5)">5</button>
+    </div>
+    <div class="btn-container">
+      <button class="submit-button" (click)="onSubmit()">Submit</button>
+    </div>
+  </div>
+</div>

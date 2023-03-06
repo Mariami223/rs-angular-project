@@ -1,0 +1,20 @@
+.search_container {
+  width: 100%;
+  display: flex;
+}
+.search_container input {
+  width: 100%;
+  border-style: none;
+  outline: none;
+  padding: 10px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.299);
+}
+.search_container button {
+  border-style: none;
+  background-color: white;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.299);
+}
+
+.search_container img {
+  width: 28px;
+}

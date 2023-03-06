@@ -1,0 +1,11 @@
+<div class="search_container">
+  <button>
+    <img src="../../../assets/Search.png" />
+  </button>
+  <input
+    type="text"
+    placeholder="ძებნა"
+    [(ngModel)]="searchTerm"
+    (input)="onSearchTextChanged()"
+  />
+</div>
